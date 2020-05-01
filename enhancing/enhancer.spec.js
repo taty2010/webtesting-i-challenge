@@ -45,6 +45,7 @@ describe('enhance item requests', () => {
       it('new item !== old item', () => {
         const newItem = succeed(shield)
         expect(newItem).not.toBe(shield)
+        expect(succeed(shield)).not.toBe(shield)
       })
   })
   describe('fail', () => {
